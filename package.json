@@ -1,0 +1,24 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "Simple projectstructure for new projects",
+  "main": "src/index.js",
+  "scripts": {
+    "serve": "http-server -p 3000 build/",
+    "build:js": "browserify index.js -o build/js/bundle.js",
+    "build:html": "jade markup/index.jade -o build",
+    "build:css": "node-sass --include-path scss styles/main.scss build/css/main.css",
+    "watch:css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [],
+  "author": "Carsten Mielke",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "http-server": "^0.9.0",
+    "jade": "^1.11.0",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2"
+  },
+  "dependencies": {}
+}
