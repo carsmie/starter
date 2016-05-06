@@ -1,6 +1,6 @@
 {
   "name": "starter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple projectstructure for new projects",
   "main": "src/index.js",
   "scripts": {
@@ -10,9 +10,9 @@
     "build:css": "node-sass --include-path scss styles/main.scss build/css/main.css",
     "watch:css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/carsmie/starter.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carsmie/starter.git"
   },
   "bugs": "https://github.com/carsmie/starter/issues",
   "keywords": [],
